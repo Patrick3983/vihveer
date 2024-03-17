@@ -10,13 +10,6 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            background-color: #f7f7f7;
-        }
-
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
         }
 
         header {
@@ -29,11 +22,17 @@
         header h1 {
             font-size: 36px;
             margin-bottom: 10px;
+            background-image: url('https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/arte-moderna.jpg');
+            background-size: cover;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
         }
 
         nav ul {
             list-style-type: none;
             padding: 0;
+            text-align: center;
         }
 
         nav ul li {
@@ -46,175 +45,27 @@
             text-decoration: none;
             font-size: 18px;
         }
-
-        section {
-            padding: 40px 0;
-        }
-
-        section h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #333;
-            text-align: center;
-        }
-
-        section p {
-            font-size: 18px;
-            color: #666;
-            text-align: center;
-        }
-
-        .servico {
-            margin-bottom: 40px;
-            text-align: center;
-        }
-
-        .servico h3 {
-            color: #333;
-        }
-
-        .servico p {
-            color: #666;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #ff6f61;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #ff5045;
-        }
-
-        #banner {
-            background-image: url('painting.jpg');
-            background-size: cover;
-            color: #fff;
-            text-align: center;
-            padding: 100px 0;
-        }
-
-        #banner h2 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        #sobre {
-            background-color: #f8bbd0;
-            padding: 80px 0;
-        }
-
-        #servicos {
-            background-color: #b3e5fc;
-            padding: 80px 0;
-        }
-
-        #portfolio {
-            background-color: #c8e6c9;
-            padding: 80px 0;
-        }
-
-        #portfolio img {
-            width: 200px;
-            margin: 20px;
-        }
-
-        #depoimentos {
-            background-color: #ffe082;
-            padding: 80px 0;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
     </style>
 </head>
 <body>
     <header>
-       .secao {
-    background-image: url('https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/arte-moderna.jpg');
-    /* Outras propriedades CSS */
-}
-
-        <div class="container">
-            <h1>Vihveer - Artista Plástico</h1>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#depoimentos">Depoimentos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Vihveer - Artista Plástico</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="banner">
-        <div class="container">
-            <h2>Bem-vindo ao Mundo da Arte</h2>
-            <p>Descubra a beleza e a criatividade das obras de arte de Vihveer.</p>
-            <a href="#portfolio" class="btn">Veja o Portfolio</a>
-        </div>
-    </section>
+    <!-- Restante do conteúdo aqui -->
 
-    <section id="sobre">
-        <div class="container">
-            <h2>Sobre o Artista</h2>
-            <p>Vihveer é um artista plástico renomado, conhecido por suas obras expressivas e criativas que exploram diversos temas e técnicas.</p>
-        </div>
-    </section>
+</body>
+</html>
 
-    <section id="servicos">
-        <div class="container">
-            <h2>Nossos Serviços</h2>
-            <div class="servico">
-                <h3>Obras Personalizadas</h3>
-                <p>Crie uma obra de arte única e personalizada sob medida para você.</p>
-            </div>
-            <div class="servico">
-                <h3>Oficinas de Arte</h3>
-                <p>Participe de oficinas de arte para aprender técnicas e explorar sua criatividade.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <!-- Adicione as imagens das obras de arte -->
-            <img src="painting1.jpg" alt="Obra de Arte 1">
-            <img src="painting2.jpg" alt="Obra de Arte 2">
-            <img src="painting3.jpg" alt="Obra de Arte 3">
-        </div>
-    </section>
-
-    <section id="depoimentos">
-        <div class="container">
-            <h2>Depoimentos</h2>
-            <!-- Inclua depoimentos de admiradores das obras de arte -->
-            <p>"As obras de Vihveer são verdadeiras inspirações que tocam a alma." - Maria</p>
-            <p>"A criatividade e a expressividade das obras de Vihveer são incomparáveis." - João</p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
             <p>&copy; 2024 Vihveer - Artista Plástico. Todos os direitos reservados.</p>
         </div>
     </footer>
