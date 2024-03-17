@@ -10,75 +10,89 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            background-color: #f7f7f7; /* Cor de fundo */
         }
-        
+
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
         }
-        
+
         header {
             background-color: #333;
             color: #fff;
             padding: 20px 0;
         }
-        
+
         header h1 {
             float: left;
+            background-image: url('texture.jpg'); /* Coloque a URL da sua imagem de textura */
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
         }
-        
+
         nav ul {
             float: right;
             list-style-type: none;
         }
-        
+
         nav ul li {
             display: inline;
             margin-left: 20px;
         }
-        
+
         nav ul li a {
             color: #fff;
             text-decoration: none;
         }
-        
+
         section {
             padding: 40px 0;
         }
-        
+
         section h2 {
             font-size: 36px;
             margin-bottom: 20px;
+            color: #333; /* Cor do texto */
         }
-        
+
         section p {
             font-size: 18px;
         }
-        
+
         .servico {
             margin-bottom: 40px;
         }
-        
+
+        .servico h3 {
+            color: #333; /* Cor do título do serviço */
+        }
+
+        .servico p {
+            color: #666; /* Cor da descrição do serviço */
+        }
+
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 20px 0;
         }
-        
+
         .btn {
             display: inline-block;
-            background-color: #333;
+            background-color: #ff6f61; /* Cor do botão */
             color: #fff;
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
-        
+
         .btn:hover {
-            background-color: #555;
+            background-color: #ff5045; /* Cor do botão ao passar o mouse */
         }
 
         #banner {
@@ -95,49 +109,27 @@
         }
 
         #sobre {
-            background-color: #f4f4f4;
+            background-color: #f8bbd0; /* Cor de fundo */
             text-align: center;
             padding: 80px 0;
-        }
-
-        #sobre h2 {
-            color: #333;
-            font-size: 36px;
-            margin-bottom: 20px;
         }
 
         #servicos {
+            background-color: #b3e5fc; /* Cor de fundo */
             text-align: center;
             padding: 80px 0;
-        }
-
-        #servicos h2 {
-            color: #333;
-            font-size: 36px;
-            margin-bottom: 20px;
         }
 
         #portfolio {
-            background-color: #f4f4f4;
+            background-color: #c8e6c9; /* Cor de fundo */
             text-align: center;
             padding: 80px 0;
-        }
-
-        #portfolio h2 {
-            color: #333;
-            font-size: 36px;
-            margin-bottom: 20px;
         }
 
         #depoimentos {
+            background-color: #ffe082; /* Cor de fundo */
             text-align: center;
             padding: 80px 0;
-        }
-
-        #depoimentos h2 {
-            color: #333;
-            font-size: 36px;
-            margin-bottom: 20px;
         }
 
         footer {
@@ -215,4 +207,3 @@
     </footer>
 </body>
 </html>
-
