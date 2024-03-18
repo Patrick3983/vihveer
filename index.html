@@ -4,116 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vihveer - Artista Plástico</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
 
-        header h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-            background-image: url('https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/arte-moderna.jpg');
-            background-size: cover;
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-        }
+header h1 {
+    margin: 0;
+}
 
-        nav ul li {
-            display: inline;
-            margin-left: 20px;
-        }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-        }
-    </style>
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff5045;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-container img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vihver - Artistic Creations</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Vihveer - Artista Plástico</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Vihver</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-
-    <section id="banner">
-        <div class="container">
-            <h2>Bem-vindo ao Mundo da Arte</h2>
-            <p>Descubra a beleza e a criatividade das obras de arte de Vihveer.</p>
-            <a href="#portfolio" class="btn">Veja o Portfolio</a>
-        </div>
-    </section>
-
-    <section id="sobre">
-        <div class="container">
-            <h2>Sobre o Artista</h2>
-            <p>Vihveer é um artista plástico renomado, conhecido por suas obras expressivas e criativas que exploram diversos temas e técnicas.</p>
-        </div>
-    </section>
-
-    <section id="servicos">
-        <div class="container">
-            <h2>Nossos Serviços</h2>
-            <div class="servico">
-                <h3>Obras Personalizadas</h3>
-                <p>Crie uma obra de arte única e personalizada sob medida para você.</p>
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Welcome to Vihver</h2>
+                <p>Explore the world of art and creativity.</p>
+                <a href="#gallery" class="btn">View Gallery</a>
             </div>
-            <div class="servico">
-                <h3>Oficinas de Arte</h3>
-                <p>Participe de oficinas de arte para aprender técnicas e explorar sua criatividade.</p>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Vihver</h2>
+                <p>Vihver is dedicated to creating unique artistic pieces, from paintings to handcrafted items. Each creation is made with passion and attention to detail.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="portfolio">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <!-- Adicione as imagens das obras de arte -->
-            <img src="painting1.jpg" alt="Obra de Arte 1">
-            <img src="painting2.jpg" alt="Obra de Arte 2">
-            <img src="painting3.jpg" alt="Obra de Arte 3">
-        </div>
-    </section>
+        <section id="gallery">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="gallery-container">
+                    <!-- Images will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
 
-    <section id="depoimentos">
-        <div class="container">
-            <h2>Depoimentos</h2>
-            <!-- Inclua depoimentos de admiradores das obras de arte -->
-            <p>"As obras de Vihveer são verdadeiras inspirações que tocam a alma." - Maria</p>
-            <p>"A criatividade e a expressividade das obras de Vihveer são incomparáveis." - João</p>
-        </div>
-    </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Vihveer - Artista Plástico. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Vihver. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="script.js" defer></script>
+    // You can add JavaScript code for interactivity here
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // Add code to handle form submission
+    alert('Form submitted!');
+});
+
 </body>
 </html>
+
