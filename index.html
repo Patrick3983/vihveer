@@ -1,246 +1,75 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vihveer - Artista Plástico</title>
-    <style>
-        /* Estilos para dispositivos com largura de tela menor ou igual a 768px (tablets e celulares) */
-        @media only screen and (max-width: 768px) {
-            .container {
-                width: 90%; /* Reduz a largura do container para telas menores */
-            }
-
-            header h1 {
-                font-size: 24px; /* Reduz o tamanho da fonte do cabeçalho em dispositivos menores */
-            }
-
-            nav ul li {
-                margin-left: 10px; /* Reduz a margem entre os itens do menu de navegação */
-            }
-
-            #hero {
-                padding: 80px 0; /* Reduz o preenchimento no herói para telas menores */
-            }
-
-            #hero h2 {
-                font-size: 36px; /* Reduz o tamanho da fonte no herói para telas menores */
-            }
-
-            .btn {
-                padding: 10px 20px; /* Reduz o preenchimento dos botões para telas menores */
-            }
-
-            section {
-                padding: 30px 0; /* Reduz o preenchimento nas seções para telas menores */
-            }
-
-            footer {
-                padding: 15px 0; /* Reduz o preenchimento no rodapé para telas menores */
-            }
-        }
-
-        /* Estilos para dispositivos com largura de tela menor ou igual a 576px (celulares) */
-        @media only screen and (max-width: 576px) {
-            header h1 {
-                font-size: 20px; /* Reduz ainda mais o tamanho da fonte do cabeçalho para celulares */
-            }
-
-            nav ul li {
-                margin-left: 5px; /* Reduz ainda mais a margem entre os itens do menu de navegação para celulares */
-            }
-
-            #hero {
-                padding: 60px 0; /* Reduz ainda mais o preenchimento no herói para celulares */
-            }
-
-            #hero h2 {
-                font-size: 30px; /* Reduz ainda mais o tamanho da fonte no herói para celulares */
-            }
-
-            .btn {
-                padding: 8px 16px; /* Reduz ainda mais o preenchimento dos botões para celulares */
-            }
-
-            section {
-                padding: 20px 0; /* Reduz ainda mais o preenchimento nas seções para celulares */
-            }
-
-            footer {
-                padding: 10px 0; /* Reduz ainda mais o preenchimento no rodapé para celulares */
-            }
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f8f8f8;
-        }
-
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        header {
-            background-color: #1e1e1e;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-            color: #fff;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-left: 20px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #ff6f61; /* Realça a cor ao passar o mouse */
-        }
-
-        #hero {
-            background-image: linear-gradient(to right, #ff6f61, #ffcc5c);
-            color: #fff;
-            text-align: center;
-            padding: 100px 0;
-        }
-
-        #hero h2 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #ff6f61;
-            color: #fff;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #ff5045;
-        }
-
-        section {
-            padding: 40px 0;
-            text-align: center;
-        }
-
-        .gallery-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .gallery-container img {
-            width: 100%;
-            border-radius: 5px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-container img:hover {
-            transform: scale(1.05); /* Aumenta a escala da imagem ao passar o mouse */
-        }
-
-        footer {
-            background-color: #1e1e1e;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horários de Ônibus</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Vihver</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#gallery">Galeria</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main>
-        <section id="hero">
-            <div class="container">
-                <h2>Bem-vindo ao Vihver</h2>
-                <p>Explore o mundo da arte e da criatividade.</p>
-                <a href="#gallery" class="btn">Ver Galeria</a>
-            </div>
-        </section>
+<table border="1">
+  <tr>
+    <td>Horário 1</td>
+    <td>Horário 2</td>
+    <td>Horário 3</td>
+    <td>Horário 4</td>
+    <td>Horário 5</td>
+    <td>Horário 6</td>
+    <td>Horário 7</td>
+    <td>Horário 8</td>
+    <td>Horário 9</td>
+    <td>Horário 10</td>
+    <td>Horário 11</td>
+    <td>Horário 12</td>
+    <td>Horário 13</td>
+    <td>Horário 14</td>
+    <td>Horário 15</td>
+    <td>Horário 16</td>
+    <td>Horário 17</td>
+  </tr>
+  <tr>
+    <td>7:00</td>
+    <td>7:30</td>
+    <td>8:00</td>
+    <td>8:30</td>
+    <td>9:00</td>
+    <td>9:30</td>
+    <td>10:00</td>
+    <td>10:30</td>
+    <td>11:00</td>
+    <td>11:30</td>
+    <td>12:00</td>
+    <td>12:30</td>
+    <td>13:00</td>
+    <td>13:30</td>
+    <td>14:00</td>
+    <td>14:30</td>
+    <td>15:00</td>
+  </tr>
+  <tr>
+    <td>15:30</td>
+    <td>16:00</td>
+    <td>16:30</td>
+    <td>17:00</td>
+    <td>17:30</td>
+    <td>18:00</td>
+    <td>18:30</td>
+    <td>19:00</td>
+    <td>19:30</td>
+    <td>20:00</td>
+    <td>20:30</td>
+    <td>21:00</td>
+    <td>21:30</td>
+    <td>22:00</td>
+    <td>22:30</td>
+    <td>23:00</td>
+    <td>23:30</td>
+  </tr>
+</table>
 
-        <section id="about">
-            <div class="container">
-                <h2>Sobre o Vihver</h2>
-                <p>O Vihver é dedicado à criação de peças artísticas únicas, desde pinturas até itens artesanais. Cada criação nfeita com paixão e atenção aos detalhes.</p>
-</div>
-</section>
+</body>
+</html>
 
-    <section id="gallery">
-        <div class="container">
-            <h2>Galeria</h2>
-            <div class="gallery-container">
-                <!-- As imagens serão carregadas dinamicamente aqui -->
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contate-nos</h2>
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Seu Nome" required>
-                <input type="email" name="email" placeholder="Seu E-mail" required>
-                <textarea name="message" placeholder="Sua Mensagem" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </section>
-</main>
-
-<footer>
-    <div class="container">
-        <p>&copy; 2024 Vihver. Todos os direitos reservados.</p>
-    </div>
-</footer>
-
-<script src="script.js" defer></script>
-<!-- Você pode adicionar código JavaScript para interatividade aqui -->
-<script>
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        // Adicione o código para lidar com o envio do formulário
         alert('Formulário enviado!');
     });
 </script>
